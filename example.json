@@ -1,0 +1,65 @@
+{
+  "reporting_entity_name":"...",
+  "reporting_entity_type":"...",
+  "reporting_structure":[
+    {
+      "reporting_plans":[{
+          "plan_name":"Plan A",
+          "plan_id_type":"hios",
+          "plan_id":"0000000000",
+          "plan_market_type":"individual"
+        },{
+          "plan_name":"Plan B",
+          "plan_id_type":"hios",
+          "plan_id":"11111111111",
+          "plan_market_type":"individual"
+        }],
+      "in_network_files":[{
+        "description":"in-network file",
+        "location":"https://www.some_site.com/files/in-network-file-1.json"
+      }]
+    },{
+      "reporting_plans":[{
+          "plan_name":"Plan C",
+          "plan_id_type":"hios",
+          "plan_id":"222222222",
+          "plan_market_type":"individual"
+        }],
+      "in_network_files":[{
+        "description":"in-network file primary",
+        "location":"https://www.some_site.com/files/in-network-file-1.json"
+      },
+      {
+        "description":"behavioral health shared file",
+        "location":"https://www.some_site.com/files/BH-health-shared-0002.json"
+      }],
+      "allowed_amount_file":{
+        "description":"allowed amount file",
+        "location":"https://www.some_site.com/files/allowed-amounts-file-empty.json"
+      }
+    },{
+      "reporting_plans":[
+        {
+          "plan_name":"Plan A",
+          "plan_id_type":"hios",
+          "plan_id":"0000000000",
+          "plan_market_type":"individual"
+        }],
+      "allowed_amount_file":{
+        "description":"allowed amount file",
+        "location":"https://www.some_site.com/files/allowed-amounts-file-empty.json"
+      }
+    },{
+      "reporting_plans":[
+        {
+          "plan_name":"Plan B",
+          "plan_id_type":"hios",
+          "plan_id":"11111111111",
+          "plan_market_type":"individual"
+        }],
+      "allowed_amount_file":{
+        "description":"allowed amount file",
+        "location":"https://www.some_site.com/files/allowed-amounts-file-1.json"
+      }
+    }]
+}
