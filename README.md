@@ -1,4 +1,5 @@
-TLDR: The code is a python script which can take arguments `python keyword_parser.py <input file> <output file> <keywords>...`. For setup, please run these commands:
+# Serif take-home task
+**TLDR**: The code is a python script which can take arguments `python keyword_parser.py <input file> <output file> <keywords>...`. For setup, please run these commands:
 
 ```bash
 git clone https://github.com/humada05/serif_takehome.git
@@ -8,8 +9,6 @@ source venv/bin/activate
 pip install -r requirements.txt
 python keyword_parser.py input.json output.json "New York" "PPO"
 ```
-
-# Serif take-home task
 
 ## Initial research
 I began by downloading the file directly from the provided link: [Anthem Index JSON](https://antm-pt-prod-dataz-nogbd-nophi-us-east1.s3.amazonaws.com/anthem/2024-08-01_anthem_index.json.gz)
