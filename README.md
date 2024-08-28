@@ -1,8 +1,8 @@
 TLDR: The code is a python script which can take arguments `python keyword_parser.py <input file> <output file> <keywords>...`. For setup, please run these commands:
 
 ```bash
-git clone [REPO]
-cd [REPO]
+git clone https://github.com/humada05/serif_takehome.git
+cd serif_takehome
 python -m virtualenv env
 source venv/bin/activate
 pip install -r requirements.txt
