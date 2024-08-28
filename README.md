@@ -10,6 +10,8 @@ python keyword_parser.py input.json output.json "New York" "PPO"
 ```
 
 # Serif take-home task
+
+## Initial research
 I began by downloading the file directly from the provided link: [Anthem Index JSON](https://antm-pt-prod-dataz-nogbd-nophi-us-east1.s3.amazonaws.com/anthem/2024-08-01_anthem_index.json.gz)
 
 
