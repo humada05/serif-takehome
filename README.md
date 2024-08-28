@@ -3,7 +3,7 @@
 
 ```bash
 git clone https://github.com/humada05/serif-takehome.git
-cd serif_takehome
+cd serif-takehome
 python -m virtualenv env
 source venv/bin/activate
 pip install -r requirements.txt
