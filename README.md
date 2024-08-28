@@ -113,9 +113,9 @@ here's the command we can run:
 jq '.reporting_structure[] | .in_network_files[], .allowed_amount_file | select(.description | contains("New York") and contains("PPO"))' example.json
 ```
 ### Explanation:
-`.reporting_structure[]`: Iterates through each item in the reporting_structure array.
-`| .in_network_files[], .allowed_amount_file`: For each reporting_structure item, this command accesses and processes each file within the in_network_files array and the allowed_amount_file object.
-`select(.description | contains("New York") and contains("PPO"))`: Filters the files to include only those with descriptions that contain both "New York" and "PPO."
+- `.reporting_structure[]`: Iterates through each item in the reporting_structure array.
+- `| .in_network_files[], .allowed_amount_file`: For each reporting_structure item, this command accesses and processes each file within the in_network_files array and the allowed_amount_file object.
+- `select(.description | contains("New York") and contains("PPO"))`: Filters the files to include only those with descriptions that contain both "New York" and "PPO."
 
 One issue that came up with my testing is that `in_network_files` and the `allowed_amount_file` are not required to be filled according to the [CMS table of contents](https://github.com/CMSgov/price-transparency-guide/tree/master/schemas/table-of-contents). So we need to add some empty-checks for each of these. Thus, we're left with:
 
