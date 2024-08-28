@@ -137,7 +137,7 @@ Here are some results from running the command on various file sizes:
 It looks like CPU usage and throughput went down once we beyond a couple GB in size. This is likely because `jq` attempts to load the json into memory before it even attempts to start filtering each value in the array. We're talking about 20+ GB of data, so clearly this strategy wont work/scale.
 
 ### Next steps
-So far we have a working (albeit slow) solution. The next step to optimize this would have the program avoid loading the entire file into memory, all we really need to do is iterate through the `reporting_structure` array and filter for links that we're interested in. It may be possible to do this with more fancy tricks using `jq`, but if all we need to do is iterate through json then why not do this in a simple python script? 
+So far, we have a working (albeit slow) solution. The next step to optimize this would be to avoid loading the entire file into memory. All we really need to do is iterate through the `reporting_structure` array and filter for the links we're interested in. It may be possible to achieve this with more advanced tricks using jq, but if all we need to do is iterate through JSON, why not do it with a simple Python script?
 
 
 ## Faster approach using python and `ijson`
